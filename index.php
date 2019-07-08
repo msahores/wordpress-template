@@ -7,4 +7,5 @@ if(have_posts(  )):
     endwhile;
 endif;            
 ?>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
