@@ -15,4 +15,5 @@
     add_action('init', 'awesome_theme_setup' ); //other option: after_setup_theme 
 
     add_theme_support( 'custom-background' );
+    add_theme_support( 'custom-header' );
 ?>
