@@ -16,8 +16,6 @@
     ?>
 <body <?php body_class($awesome_classes ); ?>>
     <?php wp_nav_menu(array('theme_location' => 'primary') ); ?>
-    <?php //var_dump(get_custom_header()) ?>
-    
     <img src=<?php header_image(); ?> 
          alt="" 
          height=<?php echo get_custom_header() -> height ?> 
