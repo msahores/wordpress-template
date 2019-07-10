@@ -15,8 +15,31 @@
     endif;
     ?>
 <body <?php body_class($awesome_classes ); ?>>
-    <?php wp_nav_menu(array('theme_location' => 'primary') ); ?>
-    <img src=<?php header_image(); ?> 
+        
+<div class="container">
+    <div class="row">
+     <div class="col-xs-12">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Awesome</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <?php wp_nav_menu(array(
+                'theme_location' => 'primary',
+                'container' => false,
+                'menu_class' => 'navbar-nav mr-auto'
+            ) ); ?>
+            
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        </nav>
+     </div>
+    </div>
+    <!-- <img src=<?php //header_image(); ?> 
          alt="" 
-         height=<?php echo get_custom_header() -> height ?> 
-         width=<?php echo get_custom_header() -> width ?> >
+         height=<?php //echo get_custom_header() -> height ?> 
+         width=<?php //echo get_custom_header() -> width ?> /> -->
